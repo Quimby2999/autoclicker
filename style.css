@@ -1,0 +1,165 @@
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  background-color: lightskyblue;
+}
+
+h1 {
+  color: rgb(6, 9, 197);
+  text-shadow: 3px 2px 5px rgb(92, 89, 89);
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+h3 {
+  color: rgb(0, 38, 255);
+  text-shadow: 2px 2px 5px rgb(177, 174, 174);
+  text-align: center;
+  margin-top: 1px;
+}
+
+h4 {
+  color: rgb(72, 84, 253);
+  text-shadow: 2px 2px 2px white;
+  text-align: center;
+  font-size: 30pt;
+  margin-bottom: 5px;
+  margin-top: -15px;
+}
+
+.cookieButton {
+  display: flex;
+  width: 30%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.cookieButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cookieButton:active {
+  transform: scale(1.05);
+}
+
+#reset-game-button {
+    display: flex;
+    width: 8%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 12px;
+    min-width: 30px;
+    height: 40px;
+    background-color: rgb(25, 0, 255);
+    border: none;
+    color: rgb(2, 154, 255);
+    font-weight: bold;
+    font-size: medium;
+    
+  }
+
+  #reset-game-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  #reset-game-button:active{
+    transform: scale(1.05);
+    border: none;
+    outline: none;
+  }
+  #reset-game-button:focus{
+    transform: scale(1.05);
+    border: none;
+    outline: none;
+  }
+
+  .upgrades{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  h2{
+    color: rgb(72, 84, 253);
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom: 0px;
+    margin-top: 1px;
+  }
+
+  .price{
+    color: rgb(6, 9, 197);
+    text-shadow: 2px 2px 5px rgb(177, 174, 174);
+    text-align: center;
+    font-size: 15pt;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    padding: 10px;
+}
+
+  #purchase-autoclicker{
+    background-color: rgb(25, 0, 255);
+    border-radius: 12px;
+    border: none;
+    color: rgb(2, 154, 255);
+    font-weight: bold;
+    font-size: medium; 
+    padding: 12px;
+  }
+
+  #purchase-autoclicker:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  #purchase-autoclicker:active{
+    transform: scale(1.05);
+    border: none;
+    outline: none;
+  }
+  #purchase-autoclicker:focus{
+    transform: scale(1.05);
+    border: none;
+    outline: none;
+  }
+
+  #purchase-click-multiplier{
+    background-color: rgb(25, 0, 255);
+    border-radius: 12px;
+    border: none;
+    color: rgb(2, 154, 255);
+    font-weight: bold;
+    font-size: medium; 
+    padding: 12px;
+    margin-left: 10px;
+  }
+  
+  #purchase-click-multiplier:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  #purchase-click-multiplier:active{
+    transform: scale(1.05);
+    border: none;
+    outline: none;
+  }
+  #purchase-click-multiplier:focus{
+    transform: scale(1.05);
+    border: none;
+    outline: none;
+  }

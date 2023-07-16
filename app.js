@@ -42,6 +42,39 @@ function purchaseAutoClickerCount() {
         autoClickerPrice = Math.round(autoClickerPrice * 1.10);
         cookieNumber.innerText = numberWithCommas(Math.round(cookieCount));
         autoClickerPriceSpan.innerText = numberWithCommas (autoClickerPrice);
-        autoClickerSpan.innerText = numberWithCommas(autoClickerCount)
+        autoClickerSpan.innerText = numberWithCommas(autoClickerCount);
+        if (autoClickerCount <= 1) {
+            activateAutoClickers();
+        }
     }
+}
+
+function retrieveAutoClickerCount() {
+    return autoClickerCount;
+}
+
+function activateAutoClickers() {
+    setInterval(function() {
+        cookieCount += autoClickerCount * Math.pow(1.2, clickMultiplierCount);
+        cookieNumber.innerText = numberWithCommas(Math.round(cookieCount));
+    }, 1000);
+}
+
+function purchaseClickMultiplier() {
+    if (cookieCount >= clickMultiplierPrice) {
+        cookieCount -= clickMultiplierPrice;
+        clickMultiplierCount += 1;
+        clickMultiplierPrice = Math.round(clickMultiplierPrice * 1.1);
+        cookieNumber.innerText = numberWithCommas(Math.round(cookieCount));
+        clickMultiplierPriceSpan.innerText = numberWithCommas(clickMultiplierPrice);
+        clickMultiplierSpan.innerText = numberWithCommas (clickMultiplierCount);
+    }
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function resetGame() {
+    location.reload();
 }
